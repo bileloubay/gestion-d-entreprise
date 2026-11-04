@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+:root {
+    --titre-bg: rgb(1, 42, 42);
+    --titre: rgb(4, 114, 114);
+
+    --stitre1: crimson;
+    --stitre1-bg: rgb(241, 167, 182);
+    --stitre1-sep: var(--stitre1);
+
+
+    --stitre2: rgb(13, 106, 102);
+    --stitre2-bg: rgb(162, 244, 224);
+    --stitre2-sep: rgb(50, 174, 168);
+
+
+    --stitre3: rgb(86, 24, 115);
+    --stitre3-bg: rgb(229, 174, 255);
+    --stitre3-sep: rgb(192, 117, 227);
+
+
+    --card: rgb(190, 28, 90);
+    --card-bg: rgb(255, 224, 236);
+    --card-sep: rgb(218, 101, 146);
+
+
+    --formule: rgb(189, 73, 6);
+    --formule-bg: rgb(255, 195, 161);
+    --formule-sep: rgb(195, 106, 55);
+
+
+    /* Stylos */
+    --defaut: var(--bleu);
+    --bleu: rgb(4, 4, 131);
+    --noir: black;
+    --rouge: crimson;
+    --mauve: rgb(75, 19, 101);
+}
+        card-container, card, card-number, card-title, card-content{
+            display: block;
+        }
+        card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block: 25px;
+}
+
+iframe{
+    width: 500px;
+    height: 500px;
+    background-color: cadetblue;
+}
+
+.card{
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid var(--card);
+    padding: 10px 10px 20px;
+    max-width: 300px;
+    margin: 10px;
+
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    text-align: center;
+}
+
+card-number{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background-color: var(--card);
+    color: var(--card-bg);
+
+}
+
+card-title{
+    color: var(--card);
+    border-bottom: 2px double var(--card);
+    /* border-radius: 5px; */
+    font-size: 18px;
+    font-weight: bold;
+
+    text-align: center;
+    margin: 0 5px 20px;
+    padding-block: 7px;
+
+}
+
+card-content{
+    color: blue;
+}
+    
+    </style>
+</head>
+<body>
+    <h1><center>Gestion d'Entreprise</center></h1>
+    <card-container></card-container>
+    
+    <script>
+        const iframe = 
+        cardCont = document.querySelector("card-container");
+        const courses = {
+            "01": {"label" : "Introduction à la Gestion", "desc" : "Description" },
+            "02": {"label" : "L'Entreprise : Visions et Rôles", "desc" : "Description" },
+        }
+        for (const cours of Object.entries(courses)) {
+            console.log(cours);
+            
+            cardCont.innerHTML += `
+                <a class="card" target="_self" href='Cours/Chapitre ${cours[0]}.html'">
+                    <card-number>${cours[0]}</card-number>
+                    <card-title>${cours[1].label}</card-title>
+                    <card-content>${cours[1].desc}</card-content>
+                </a>
+            `
+            
+        }
+
+
+    </script>
+</body>
+</html>
