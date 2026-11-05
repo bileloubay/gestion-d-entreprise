@@ -1,0 +1,48 @@
+titre, st1, st2, st3{
+    display: block;
+    font-weight: bold;
+}
+
+
+titre{
+    margin-top: 0;
+    padding-block: 5px;
+    color: var(--titre);
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+
+}
+
+st1, st2, st3{
+    width: fit-content;
+    padding: 7px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    text-align: center;
+    margin-block: 30px 20px;
+}
+
+
+st1{
+    color: var(--stitre1);
+    background-color: var(--stitre1-bg);
+    font-size: 26px;
+}
+
+
+
+st2{
+    color: var(--stitre2);
+    background-color: var(--stitre2-bg);
+    font-size: 22px;
+}
+
+
+
+st3{
+    color: var(--stitre3);
+    background-color: var(--stitre3-bg);
+    font-size: 18px;
+    margin-inline: auto;
+}

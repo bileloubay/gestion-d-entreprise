@@ -1,0 +1,20 @@
+formule-bloc{
+    display: block;
+    width: fit-content;
+    border: 2px solid var(--formule);
+    background-color: var(--formule-bg);
+    padding: 10px;
+    border-radius: 12px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+formule{
+    display: inline-block;
+    color: var(--formule);
+    font-family: lucida console;
+    font-size: 24px;
+}
+
+
+

@@ -1,0 +1,48 @@
+table-holder{
+    display: block;
+    overflow: auto;
+    max-width: 100%;
+}
+
+
+
+table.vers{
+    border-spacing: 5px;
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+    background-color: var(--card-bg);
+    color: var(--card);
+    width: 100%;
+    min-width: 650px;
+    
+    th, td{
+        /* border: 1px solid; */
+        padding: 5px 20px;
+    }
+
+    th{
+        color: var(--card-bg);
+        background-color: var(--card);
+    }
+
+    td{
+        padding-block: 10px;
+        border-bottom: 1px solid;
+
+    }
+    
+    td:first-child{
+        position: relative;
+    }
+    td:first-child::after{
+        content: "⟶";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+    
+    td:last-child{
+        text-align: center;
+    }
+}
