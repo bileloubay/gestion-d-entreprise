@@ -27,6 +27,10 @@ stylo{
         width: attr(w px);
     }
 
+    &[maxpc-w]{
+        width: attr(maxpc-w type(<percentage>));
+    }
+
     &[w-fit-cont]{
         width: fit-content;
     }
