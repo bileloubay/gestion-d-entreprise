@@ -29,14 +29,16 @@
         const iframe = 
         cardCont = document.querySelector("card-container");
         const courses = {
-            "01": {"label" : "Introduction à la Gestion", "desc" : "Découvrir les principes fondamentaux de la gestion, ces objectifs et ses quatre fonctions essentielles." },
-            "02": {"label" : "L'Entreprise : Visions et Rôles", "desc" : "Comprendre les différentes visions de l'entreprise, son fonctionnement et ses rôles." },
+            "*": {"path": "Cours/Examen.html", "label" : "Examen Écrit", "desc" : "30 Novembre &longrightarrow; 05 Décembre <br>(Commun)" },
+            "**": {"path": "Cours/Projet.html", "label" : "Projet à Présenter", "desc" : "07 &longrightarrow; 12 Décembre" },
+            "01": {"path": "Cours/Section 01.html", "label" : "Introduction à la Gestion", "desc" : "Découvrir les principes fondamentaux de la gestion, ces objectifs et ses quatre fonctions essentielles." },
+            "02": {"path": "Cours/Section 02.html", "label" : "L'Entreprise : Visions et Rôles", "desc" : "Comprendre les différentes visions de l'entreprise, son fonctionnement et ses rôles." },
         }
         for (const cours of Object.entries(courses)) {
             console.log(cours);
             
             cardCont.innerHTML += `
-                <a class="card" target="_self" href='Cours/Chapitre ${cours[0]}.html'">
+                <a class="card" target="_self" href="${cours[1].path}">
                     <card-number>${cours[0]}</card-number>
                     <card-title>${cours[1].label}</card-title>
                     <card-content>${cours[1].desc}</card-content>
