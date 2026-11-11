@@ -6,13 +6,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="Cours/style.css">
     <style>
+        card-container{
+            justify-content:space-evenly;
+            align-items: stretch;
+        }
         .card{
             all: unset;
+            display: block;
             cursor: pointer;
             position: relative;
             border: 2px solid var(--card);
             padding: 10px 10px 20px;
-            max-width: 300px;
+            min-width: 300px;
+            width: 40%;
             margin: 10px;
 
             background-color: var(--card-bg);
@@ -33,6 +39,7 @@
             "**": {"path": "Cours/Projet.html", "label" : "Projet à Présenter", "desc" : "07 &longrightarrow; 12 Décembre" },
             "01": {"path": "Cours/Section 01.html", "label" : "Introduction à la Gestion", "desc" : "Découvrir les principes fondamentaux de la gestion, ces objectifs et ses quatre fonctions essentielles." },
             "02": {"path": "Cours/Section 02.html", "label" : "L'Entreprise : Visions et Rôles", "desc" : "Comprendre les différentes visions de l'entreprise, son fonctionnement et ses rôles." },
+            "03": {"path": "Cours/Section 03.html", "label" : "Typologie des Entreprises", "desc" : "Découvrir les différents critères de classification des entreprises." },
         }
         for (const cours of Object.entries(courses)) {
             console.log(cours);

@@ -1,10 +1,6 @@
-titre, st1, st2, st3{
+titre{
     display: block;
     font-weight: bold;
-}
-
-
-titre{
     margin-top: 0;
     padding-block: 5px;
     color: var(--titre);
@@ -14,14 +10,18 @@ titre{
 
 }
 
-st1, st2, st3{
+st1, st2, st3, st-or, st-rs{
+    display: block;
+    font-weight: bold;
     width: fit-content;
     padding: 7px 0px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
     margin-top: 20px;
     &~pad{
-        border-left: 4px solid;
+        border-left: 3px solid;
+        border-bottom: 3px double;
+        padding-bottom: 15px;
         --border-opacity: 30%;
     }
     
@@ -32,7 +32,7 @@ st1{
     color: var(--stitre1);
     font-size: 26px;
     &~pad{
-        border-left-color: rgb(from var(--stitre1) r g b / var(--border-opacity));
+        border-color: rgb(from var(--stitre1) r g b / var(--border-opacity));
         
 
     }
@@ -44,7 +44,7 @@ st2{
     color: var(--stitre2);
     font-size: 22px;
     &~pad{
-        border-left-color: rgb(from var(--stitre2) r g b / var(--border-opacity));
+        border-color: rgb(from var(--stitre2) r g b / var(--border-opacity));
         
 
     }
@@ -57,8 +57,24 @@ st3{
     font-size: 18px;
     /* margin-inline: auto; */
     &~pad{
-        border-left-color: rgb(from var(--stitre3) r g b / var(--border-opacity));
-        
+        border-color: rgb(from var(--stitre3) r g b / var(--border-opacity));
+    }
+}
 
+st-or{
+    color: var(--orange);
+    font-size: 17px;
+    /* margin-inline: auto; */
+    &~pad{
+        border-color: rgb(from var(--orange) r g b / var(--border-opacity));
+    }
+}
+
+st-rs{
+    color: var(--rose);
+    font-size: 16px;
+    /* margin-inline: auto; */
+    &~pad{
+        border-color: rgb(from var(--rose) r g b / var(--border-opacity));
     }
 }

@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction à la Gestion</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .mermaid svg .node rect{
+            rx: 17px;
+            ry: 17px;
+        }
+    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@12/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true,
+            themeVariables: {
+                fontSize: '16px',
+                fontFamily: 'cursive',
+                fontWeight: '800',
+            }
+        });
+    </script>
 </head>
 <body>
 <titre pointer onclick="window.location.href='../index.html'" rouge soft st-w="1" st-c="var(--rouge)">
@@ -66,15 +84,20 @@
         <st2>3. Les quatre fonctions de la gestion</st2>
     
         <pad>
-            La gestion est un processus qui repose sur quatre fonctions interdépendantes : <br><br>
+            La gestion est un processus qui repose sur quatre fonctions interdépendantes: <br><br>
             
-            <st3 style="display: inline-block;">Planifier</st3>
-            <span style="color: var(--stitre3);">&longrightarrow;</span>
-            <st3 style="display: inline-block;">Organiser</st3>
-            <span style="color: var(--stitre3);">&longrightarrow;</span>
-            <st3 style="display: inline-block;">Diriger</st3>
-            <span style="color: var(--stitre3);">&longrightarrow;</span>
-            <st3 style="display: inline-block;">Contrôler</st3>
+            <div class="mermaid">
+                flowchart LR
+                A[Planifier] --> B[Organiser]
+                B --> C[Diriger]
+
+                C --> D[Contrôler]
+
+                classDef classf fill:#32aea8,stroke:#06847e,stroke-width:3px,color:black,font-size:16px,font-weight:bold
+                linkStyle 0,1,2 stroke:#06847e
+
+                class A,B,C,D classf
+            </div>
             
             <br><br>
             

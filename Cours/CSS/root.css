@@ -1,8 +1,8 @@
 :root {
     --bg: rgb(0, 0, 0);
 
-    --titre: var(--rouge);
-    --titre-bg: rgb(29, 3, 90);
+    --titre: #6f041b;
+    --titre-bg: #a92441;
 
     --stitre1: var(--rouge);
     --stitre1-bg: var(--lrouge);
@@ -43,7 +43,7 @@
         /* Rouge, Light Rouge, Soft Rouge */
     --rouge : crimson;
     --lrouge: rgb(241, 167, 167);
-    --srouge : rgb(236, 81, 112);
+    --srouge : #ec5170;
 
         /* Mauve, Light Mauve, Soft Mauve */
     --mauve: rgb(145, 22, 202);
@@ -51,9 +51,9 @@
     --smauve: rgb(192, 117, 227);
 
         /* Teal, Light Teal, Soft Teal */
-    --teal: rgb(6, 132, 126);
+    --teal: #06847e;
     --lteal: rgb(162, 244, 224);
-    --steal: rgb(50, 174, 168);
+    --steal: #32aea8;
 
         /* Rose, Light Rose, Soft Rose */
     --rose: rgb(189, 7, 76);
