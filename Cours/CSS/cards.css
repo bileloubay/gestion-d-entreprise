@@ -6,6 +6,7 @@ card-caption, card-container, card-cell, card-cell2, card-cell3, card-cell-conte
 card-caption{
     width: fit-content;
     margin: auto;
+    margin-top: 40px;
     padding: 5px 20px;
     border-radius: 12px;
     font-weight: bold;
@@ -20,6 +21,7 @@ card-container{
     justify-content: center;
     align-items: center;
     margin-block: 25px;
+    color: black;
     &:has(card-cell-image + card-cell-content){
         flex-wrap: wrap;
         flex-direction: column;
