@@ -35,28 +35,29 @@
     <p>On peut classer les entreprises selon plusieurs critères :</p>
     <div class="mermaid">
         flowchart TD
-        A[Classification] --> B1[Économique]
-        A --> B2[Juridique]
+        A[Classification] --> B1[Juridique]
+        A --> B2[Économique]
 
-        B1 --> C1[Taille]
-        B1 --> C2[Activité]
+        B2 --> C1[Taille]
+        B2 --> C2[Activité]
+        B2 --> C3[Nature et Mode de Production]
         
-        B2 --> C3[Entreprises Privées]
-        B2 --> C4[Entreprises Publiques]
-        B2 --> C5[Sociétés Civiles]
+        B1 --> C4[Entreprises Privées]
+        B1 --> C5[Entreprises Publiques]
+        B1 --> C6[Sociétés Civiles]
 
         classDef classA fill:#a92441,stroke:#6f041b,stroke-width:3px,color:black,font-size:16px,font-weight:bold
         linkStyle 0,1 stroke:#6f041b
         
         classDef classB fill:#ec5170,stroke:crimson,stroke-width:3px,color:black,font-size:16px,font-weight:bold
-        linkStyle 2,3,4,5,6 stroke:crimson
+        linkStyle 2,3,4,5,6,7 stroke:crimson
         
         classDef classC fill:#32aea8,stroke:#06847e,stroke-width:3px,color:black,font-size:16px,font-weight:bold
 
 
         class A classA
         class B1,B2 classB
-        class C1,C2,C3,C4,C5 classC
+        class C1,C2,C3,C4,C5,C6 classC
     </div>
 
     <st1>I. La classification juridique</st1>
@@ -116,6 +117,7 @@
                     </p>
                 </div>
 
+
                 <st3>B.1. Les sociétés de personnes (confiance mutuelle)</st3>
                 <pad>
                     <p>
@@ -141,18 +143,18 @@
                     
                     <p>Il s'agit principalement des :</p>
                     <div pl="20">
-                        <p w-fit-cont bgc-orange noir p="4" gras>Sociétés en nom collectif</p>
-                        <p w-fit-cont bgc-orange noir p="4" gras>Sociétés en commandite simple</p>
-                        <p w-fit-cont bgc-orange noir p="4" gras>Sociétés en participation</p>
+                        <p w-fit-cont bgc-rose noir p="4" gras>Sociétés en nom collectif</p>
+                        <p w-fit-cont bgc-rose noir p="4" gras>Sociétés en commandite simple</p>
+                        <p w-fit-cont bgc-rose noir p="4" gras>Sociétés en participation</p>
                     </div>
                     
-                    <st-or>B.1.1. La société en nom collectif (SNC)</st-or>
+                    <st-rs>B.1.1. La société en nom collectif (SNC)</st-rs>
                     <pad>
                         <p>
                             Elle est caractérisée par une responsabilité indéfinie et solidaire.
                         </p>
                         <p>
-                            <span gras orange>Définition : </span>
+                            <span gras rose>Définition : </span>
                             C'est une forme pure de société de personnes.
                         </p>
                         <pad>
@@ -164,57 +166,289 @@
                             </p>
                             <p>
                                 - Les parts sociales ne peuvent être cédées que sur décision unanime des associés.
+                            </p>
+                        </pad>
+                    </pad>
+
+                    <st-rs>B.1.2. La société en commandite simple (SCS)</st-rs>
+                    <pad>
+                        <p>
+                            Elle est caractérisée par la présence de deux catégories d'associés.
+                        </p>
+                        <p>
+                            <span gras rose>Définition : </span>
+                            C'est une société qui réunit deux catégories d'associés ayant des risques différents :
+                        </p>
+                        <st-or>1. Les commandités :</st-or>
+                        <pad>
+                            <p>
+                                - Ce sont des associés qui ont le statut des associés d'une SNC (société en nom collectif).
+                            </p>
+                            <p>
+                                - Ils ont la qualité de commerçant.
+                            </p>
+                            <p>
+                                - Ils dirigent la société.
+                            </p>
+                            <p>
+                                - Ils répondent indéfiniment et solidairement des dettes.
+                            </p>
+                        </pad>
+
+                        <st-or>2. Les commanditaires :</st-or>
+                        <pad>
+                            <p>
+                                - Ce sont des investisseurs qui apportent de l'argent.
+                            </p>
+                            <p>
+                                - Ils ne risquent que le montant de leurs apports.
+                            </p>
+                        </pad>
+                    </pad>
+                    
+                    <st-rs>B.1.3. La société en participation (SEP)</st-rs>
+                    <pad>
+                        <p>
+                            C'est une société discrète, non déclarée publiquement, dans laquelle les associés collaborent entre eux, mais seuls certains associés sont responsables vis-à-vis des personnes extérieures.
                         </p>
                     </pad>
                 </pad>
 
-                <st-or>B.1.2. La société en commandite simple (SCS)</st-or>
+
+                <st3>B.2. Les sociétés de capitaux</st3>
                 <pad>
                     <p>
-                        Elle est caractérisée par la présence de deux catégories d'associés.
+                        <span mauve>Définition :</span> 
+                        Dans une société de capitaux, l'argent apporté compte davantage que l'identité de l'associé. L'associé est appelé actionnaire et sa responsabilité est limitée au montant de son apport.
+
                     </p>
-                    <p>
-                        <span gras orange>Définition : </span>
-                        C'est une société qui réunit deux catégories d'associés ayant des risques différents :
-                    </p>
-                    <st-rs>1. Les commandités :</st-rs>
+                    <p>Les formes de sociétés de capitaux :</p>
+
+                    <st-rs>B.2.1. La Société Anonyme (SA)</st-rs>
                     <pad>
                         <p>
-                            - Ce sont des associés qui ont le statut des associés d'une SNC (société en nom collectif).
+                            La société est dite anonyme parce qu'elle n'est pas désignée par le nom de ses associés (ex. : Poulina Group, Tunisair…).
+                        </p>
+                        <p>Les critères de la société anonyme (SA) :</p>
+                        <div pl="20">
+                            <p>
+                                - Le capital est déterminé à l'avance.
+                            </p>
+                            <p>
+                                - Le statut de SA fixe le montant du capital dès sa création.
+                            </p>
+                            <p>
+                                - <span bgc-rose gras noir p-in="3">Action</span> <b rose>:</b> un titre qui représente une fraction du capital. Elle donne droit à une part des bénéfices (dividendes) ainsi qu'à un droit de vote.
+                            </p>
+                            <p>
+                                - <span bgc-rose gras noir p-in="3">Libre cessibilité et négociabilité</span> <b rose>:</b> l'actionnaire peut vendre ses actions à qui il veut, sans demander l'accord des autres associés.
+                            </p>
+                            <p>
+                                - <span bgc-rose gras noir p-in="3">Conseil d'administration</span> <b rose>:</b> un groupe de personnes élues par les actionnaires et chargées de contrôler la gestion de la société.
+                            </p>
+                            <p>
+                                - Les actionnaires ne sont pas responsables des dettes sociales de l'entreprise au-delà du montant de leurs apports. Leur responsabilité est donc limitée.
+                            </p>
+                        </div>
+
+                        <a-retenir>
+                            <span bgc-a-retenir noir p-in="3">À retenir — La Société Anonyme</span> <b a-retenir> : </b>
+                            Capital divisé en actions librement négociables, société gérée par un conseil d'administration et associés ayant le statut d'actionnaires à responsabilité limitée.
+                        </a-retenir>
+                    </pad>
+
+
+                    <st-rs>B.2.2. La société en commandite par actions</st-rs>
+                    <pad>
+                        <p>
+                            <span rose gras>Définition</span><b rose> : </b>
+                            C'est la version en actions de la société en commandite.
+                        </p>
+                        <p>On y retrouve deux catégories d'associés :</p>
+                        <div pl="20">
+                            <p><span orange gras>Les commandités : </span>les commerçants</p>
+                            <p><span orange gras>Les commanditaires : </span>les actionnaires</p>
+                        </div>
+                        <p>Le critère de la société en commandite par actions :</p>
+                        <div pl="20">
+                            <p>
+                                - Les commanditaires doivent être au moins trois.
+                            </p>
+                        </div>
+                    </pad>
+
+                    <st-rs>B.2.3. La SARL : Société À Responsabilité Limitée</st-rs>
+                    <pad>
+                        <p>
+                            C'est une forme hybride dont le capital est divisé en parts sociales.
                         </p>
                         <p>
-                            - Ils ont la qualité de commerçant.
-                        </p>
-                        <p>
-                            - Ils dirigent la société.
-                        </p>
-                        <p>
-                            - Ils répondent indéfiniment et solidairement des dettes.
+                            Les associés ne risquent que le montant de leurs apports (<u gras>comme dans les sociétés de capitaux</u>), mais les parts sociales ne sont pas librement cessibles (<u gras>comme dans les sociétés de personnes</u>).
                         </p>
                     </pad>
 
-                    <st-rs>2. Les commanditaires :</st-rs>
+                    <st-rs>B.2.4. La SUARL : Société  Unipersonnelle À Responsabilité Limitée</st-rs>
                     <pad>
                         <p>
-                            - Ce sont des investisseurs qui apportent de l'argent.
-                        </p>
-                        <p>
-                            - Ils ne risquent que le montant de leurs apports.
+                            C'est une SARL (Société À Responsabilité Limitée) créée par une seule personne.
                         </p>
                     </pad>
-                </pad>
-                
-                <st-or>B.1.3. La société en participation (SEP)</st-or>
-                <pad>
-                    <p>
-                        C'est une société discrète, non déclarée publiquement, dans laquelle les associés collaborent entre eux, mais seuls certains associés sont responsables vis-à-vis des personnes extérieures.
-                    </p>
                 </pad>
             </pad>
         </pad>
-    </pad>
-</pad>
 
+        <st2>2. Les entreprises publiques</st2>
+        <pad>
+            <p>
+                Elles relèvent de la propriété et du contrôle de l'État ou des collectivités publiques.
+            </p>
+
+            <p>
+                Leur mission est de fournir des services vitaux aux citoyens sans rechercher systématiquement le profit.
+            </p>
+        </pad>
+
+        <st2>3. Les sociétés civiles (المجتمع المدني)</st2>
+        <pad>
+            <p>
+                Elles regroupent des personnes qui n'ont pas la qualité de commerçant et qui exercent des activités libérales.
+            </p>
+        </pad>
+    </pad>
+
+
+    <st1>II. La classification économique</st1>
+    <pad>
+        <st2>A. La taille</st2>
+        <pad>
+            <table-caption>Taille de l'entreprise &mdash; Effectif des employé &mdash; Rôle de l'entrepreneur</table-caption>
+            <table-holder>
+                <table t-centre>
+                    <tr>
+                        <th>Taille de l'entreprise</th>
+                        <th>Effectif des employés</th>
+                        <th>Rôle de l'entrepreneur</th>
+                    </tr>
+                    <tr>
+                        <td>TPE (Très Petite Entreprise)</td>
+                        <td>1 à 9</td>
+                        <td>Participe à l'activité</td>
+                    </tr>
+                    <tr>
+                        <td>PME (Petite et Moyenne Entreprise)</td>
+                        <td>10 à 249</td>
+                        <td>N'execute pas lui-même le travail et en contrôle l'execution</td>
+                    </tr>
+                    <tr>
+                        <td>ETI (Entreprise de Taille Intermidiaire)</td>
+                        <td>250 à 5,000</td>
+                        <td rowspan="2">Son rôle consiste principalement à la prise des décisions stratégiques</td>
+                    </tr>
+                    <tr>
+                        <td>GE (Grande Entreprise)</td>
+                        <td>plus de 5,000</td>
+                    </tr>
+                </table>
+            </table-holder>
+            <p mt="30">
+                <span bgc-steal gras noir p-in="3">Décisions stratégiques</span><br>
+                <p pl="20">
+                    Les décisions importantes qui concernent l'orientation générale et le développement de l'entreprise à long terme 
+                </p>
+            </p>
+            <p mt="30">
+                <span bgc-steal gras noir p-in="3">Décisions oppérationnels</span><br>
+                <p pl="20">
+                    Les décisions quotidiennes liées au fonctionnement et à l'exécution des activités
+                </p>
+
+            </p>
+            
+            
+
+        </pad>
+
+        <st2>B. L'activité</st2>
+        <pad>
+            <p>
+                Les entreprises sont regroupées selon leur activité et leurs méthodes de production.
+            </p>
+
+            <st3>1\. Domaine d'activité des entreprises</st3>
+            <pad>
+                <p>- Agriculture (activité agricole)</p>
+                <p>- Industrie (activité industrielle)</p>
+                <p>- Commerce (activité commerciale)</p>
+                <p>- Services (transport, santé…)</p>
+                <p>- Établissements de crédit et d'assurance (banques…)</p>
+            </pad>
+
+            <st3>1\. Domaine d'activité des entreprises</st3>
+            <pad>
+                <p>
+                    Les entreprises qui offrent des produits de même nature ou de même catégorie sont regroupées dans une même branche d'activité (agroalimentaire, textile…).
+                </p>
+            </pad>
+
+            <st3>1\. Domaine d'activité des entreprises</st3>
+            <pad>
+                <p>
+                    Les entreprises sont regroupées selon la nature de leurs activités et des biens ou services produits.
+                </p>
+                <div pl="20">
+                    <st-rs>1. Secteur primaire</st-rs>
+                    <pad>
+                        <p>
+                            Regroupe les activités productives de matières premières non transformées (pêche, chasse, agriculture…)
+                        </p>
+                    </pad>
+                    
+                    <st-rs>2. Secteur secondaire</st-rs>
+                    <pad>
+                        <p>
+                            Regroupe les activités liées à la transformation des matières premières issues du secteur primaire
+                        </p>
+                    </pad>
+                    
+                    <st-rs>3. Secteur tertiaire (services)</st-rs>
+                    <pad>
+                        <p>
+                            Regroupe les activités liées aux services
+                        </p>
+                    </pad>
+                    
+                    <st-rs>4. Secteur quaternaire</st-rs>
+                    <pad>
+                        <p>
+                            Regroupe les activités liées au savoir, aux hautes technologies, à l'informatique et à la recherche
+                        </p>
+                    </pad>
+                    
+                </div>
+            </pad>
+        </pad>
+
+        <st2>C. La nature et le mode de production</st2>
+        <pad>
+            <p>
+                Les entreprises sont regroupées selon le type de biens produits et leur mode de production.
+            </p>
+
+            <st3>1. La production en masse</st3>
+            <pad>
+                <p>
+                    Fabrication en grande quantité de produits identiques (yaourts, stylos…).
+                </p>
+            </pad>
+            
+            <st3>2. La production unitaire par lots</st3>
+            <pad>
+                <p>
+                    Fabrication de petites quantités de produits, souvent personnalisés (bateaux, avions, joaillerie…), selon les besoins spécifiques des clients.
+                </p>
+            </pad>
+        </pad>
+    </pad>
 
 </body>
 </html>

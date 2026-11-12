@@ -53,6 +53,13 @@ pad{
 
 
 remarque{
+    display: block;
     color: orangered;
+    font-weight: bold;
+}
+
+a-retenir{
+    display: block;
+    color: rgb(173, 60, 60);
     font-weight: bold;
 }

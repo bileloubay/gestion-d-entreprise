@@ -1,7 +1,7 @@
 :root {
     --bg: rgb(0, 0, 0);
 
-    --titre: #6f041b;
+    --titre: #b7042b;
     --titre-bg: #a92441;
 
     --stitre1: var(--rouge);
@@ -51,8 +51,8 @@
     --smauve: rgb(192, 117, 227);
 
         /* Teal, Light Teal, Soft Teal */
-    --teal: #06847e;
-    --lteal: rgb(162, 244, 224);
+    --teal: rgb(0, 110, 105);
+    --lteal: rgb(8, 207, 197);
     --steal: #32aea8;
 
         /* Rose, Light Rose, Soft Rose */
@@ -64,4 +64,6 @@
     --orange: rgb(209, 67, 15);
     --lorange: rgb(252, 153, 118);
     --sorange: rgb(195, 106, 55);
+
+    --a-retenir: rgb(173, 60, 60);
 }

@@ -241,6 +241,11 @@ stylo{
         color: var(--sorange);
     }
 
+    /*==== Other Colors====*/
+    &[a-retenir]{
+        color: var(--a-retenir);
+    }
+
     /* *************** BACKGROUND COLORS *************** */
     &[bgc]{
         background-color: attr(bgc type(<color>));
@@ -312,6 +317,7 @@ stylo{
     &[bgc-srose]{
         background-color: var(--srose);
     }
+
     /*==== Orange ====*/
     &[bgc-orange]{
         background-color: var(--orange);
@@ -323,5 +329,11 @@ stylo{
 
     &[bgc-sorange]{
         background-color: var(--sorange);
+    }
+
+
+    /*==== Other Colors====*/
+    &[bgc-a-retenir]{
+        background-color: var(--a-retenir);
     }
 }
